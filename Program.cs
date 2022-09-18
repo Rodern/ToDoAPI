@@ -44,7 +44,7 @@ app.MapDelete("api/todo/{id}", async (AppDbContext context, int id) =>
 	return Results.Ok("Deleted");
 });
 
-//app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 
 app.Run();
 
